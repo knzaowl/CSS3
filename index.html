@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>belajar css3</title>
+    <style>
+        div 2{
+            border-radius: 25px;
+            width: 200px;
+            height: 100px;
+            margin: 50px auto;
+            background-color: #ff9966;
+            background: rgb(76, 175, 80);
+            padding: 10%;
+        }
+        div.first{
+            background: rgba(76, 175, 80, 0.1);
+        }
+        div.second{
+            background: rgba(76, 175, 80, 0.3);
+        }
+        div.third{
+            background: rgba(76, 175, 80, 0.6);
+        }
+        #example1 {
+            border: 1px solid;
+            padding: 10px;
+            box-shadow: 5px 10px;
+        }
+
+        #example2 {
+            border: 1px solid;
+            padding: 10px;
+            box-shadow: 5px 10px #888888;}
+
+        h2 { text-shadow: 2px 2px palevioletred;}
+        #grad2 {
+             height: 100px;
+             background-color: blueviolet; /* For browsers that do not support gradients */
+             background-image: linear-gradient(90deg, blueviolet, pink, yellow);
+            }
+        #radial {
+            height: 150px;
+            width: 200px;
+            background-image: radial-gradient(pink, blueviolet, red);
+            }
+        @font-face {
+            font-family: myFirstFont;
+            src: url(sansation_light.woff);
+            }
+        @font-face {
+            font-family: myFirstFont;
+            src: url(sansation_light.woff);
+            }
+
+        * {
+            font-family: myFirstFont;
+          }
+         .mybox {
+            width: 100px;
+            height: 150px;
+            background-color: paleturquoise;
+            border-radius: 25px;
+            transition: all 0.2s ease;
+            -webkit-transition: all 0.2s ease;
+         }
+         .mybox:hover {
+            background-color: pink;
+            width: 300px;
+            height: 150px; }
+         img {
+            filter: grayscale(100%);}
+
+         div.a {
+            width: 150px;
+            height: 80px;
+            background-color: sandybrown;
+            transform: rotate(20deg);} 
+
+         div.b {
+            width: 150px;
+            height: 80px;
+            background-color: palegreen;
+            transform: skewY(20deg);}
+
+         div.c {
+            width: 150px;
+            height: 80px;
+            background-color: hotpink;
+            transform: scaleY(1.5);}
+
+         div.H{
+            width: 200px;
+            height: 100px;
+            background: salmon;
+            transition: width 2s;}
+         div:hover {width: 300px;}
+
+         div.b{
+            width: 100px;
+            height: 100px;
+            background-color: tomato;
+            animation-name: example;
+            animation-duration: 3s;}
+
+         @keyframes example {
+            from {background-color: red;}
+            to {background-color: yellowgreen;}} 
+            
+            
+    </style>
+</head>
+<body>
+    <h2>opacity</h2>
+    <div style="opacity: 0.3;"></div>
+    <div class="third"></div>
+    <div><p>default</p></div>
+
+    <h2>The box-shadow Property</h2>
+    <h3>box-shadow: 5px 10px:</h3>
+    <div id="example1"><p>ini adalah box shadow 5px 10px hitam</p></div>
+
+    <h3>box-shadow: 5px 10px #888888:</h3>
+    <div id="example2">
+    <p>ini adalah box shadow 5px 10px #888888</p></div>
+
+    <h2>Linear gradient</h2>
+    <div id="grad2" style="text-align:center;">90deg</div><br>
+
+    <h2>Radial gradient</h2> <h4>Evenly Spaced Color Stops</h4>
+    <div id="radial"></div>
+
+    <h3>The @font-face Rule</h3>
+    <div>With CSS, websites can finally use fonts other than the pre selected "web-safe" fonts.</div>
+
+    <h3>The @font-face Rule</h3>
+    <div> With CSS, websites can use fonts other than the pre-selected "web-safe" fonts.</div> 
+
+    <h2>vendor prefix</h2>
+    <div class="mybox"></div>
+    <script src="./script.js"></script>
+
+    <h2>The filter Property</h2>
+    <p>Convert the image to grayscale:</p>
+    <img src="gambar.png" alt="gambar.png" width="300" height="300">
+    <p><strong>Note:</strong> The filter property is not supported in Edge 12 or Internet Explorer.</p>
+
+    <h1>The transform Property</h1>
+    <h2>transform: rotate(20deg):</h2>
+    <div class="a">Hello World!</div><br>
+
+    <h2>transform: skewY(20deg):</h2>
+    <div class="b">Hello World!</div><br>
+
+    <h2>transform: scaleY(1.5):</h2>
+    <div class="c">Hello World!</div>
+
+    <h2>The transition Property</h2>
+    <h3>Hover over the div element below, to see the transition effect</h3>
+    <div><p>Hover over the div element below, to see the transition effect:</p></div>
+
+    <h1>CSS Animation</h1>
+
+    <div></div>
+
+    <h3><b>Note:</b> When an animation is finished, it goes back to its original style. </h3>
+
+</body>
+</html>
